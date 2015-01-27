@@ -1,5 +1,5 @@
 include:
-  - secureserver.firewall-base
+  - ./base-hardening-formula.firewall-base
 
 software-requirements:
   pkg.installed:
@@ -13,6 +13,6 @@ software-requirements:
   file:
     - managed
     - template: jinja
-    - source: salt://secureserver/cron.daily/00logwatch
+    - source: salt://./base-hardening-formula/cron.daily/00logwatch
     - require:
       - pkg: software-requirements
