@@ -13,6 +13,7 @@ user-ports-{{key}}:
     - jump: ACCEPT
     - match: state
     - connstate: NEW
+    - source: {{rule.get('source', 'anywhere')}}
     - dport: {{rule.get('dport')}}
     - proto: {{rule.get('proto', 'tcp')}}
     - sport: 1025:65535
