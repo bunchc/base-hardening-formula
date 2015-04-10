@@ -25,7 +25,7 @@ debconf-fwsnort:
     - data:
       'fwsnort/download': {'type': 'boolean', 'value': 'true'}
     - require_in:
-      - pkg software-requirements
+      - pkg: software-requirements
 
 
 /etc/cron.daily/00logwatch:
