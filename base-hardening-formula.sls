@@ -23,7 +23,7 @@ debconf-fwsnort:
   debconf.set:
     - name: fwsnort
     - data:
-      'fwsnort/download': {'type': 'boolean', 'value': 'true'}
+        'fwsnort/download': {'type': 'boolean', 'value': 'true'}
     - require_in:
       - pkg: software-requirements
 
