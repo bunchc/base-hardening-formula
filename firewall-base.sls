@@ -31,6 +31,12 @@ allow established:
     - jump: ACCEPT
     - save: True
 
+add logging:
+  iptables.append:
+    - table: filter
+    - chain: INPUT
+    - jump: LOG
+
 default to drop:
   iptables.set_policy:
     - table: filter
