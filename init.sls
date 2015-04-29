@@ -1,3 +1,7 @@
 include:
-  - .base-hardening-formula
+  # Set sane sysctl defaults
   - .sysctl
+  # Configure IPTables
+  - base-hardening-formula.firewall-base
+  # Turn up logging
+  - .base-hardening-formula
