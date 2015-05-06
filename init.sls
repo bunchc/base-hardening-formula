@@ -1,6 +1,11 @@
 include:
-  # Set sane sysctl defaults
+  # System Bits first
+  ## Sysctl
   - .sysctl
+  ## Limits
+  - .limits
+  ## Lockdown system files
+  - .minimize_access
 
   # Configure IPTables
   - .firewall-base
