@@ -1,3 +1,4 @@
+# Configure Logwatch
 software-requirements:
   pkg.installed:
     - pkgs:
@@ -19,3 +20,11 @@ debconf-postfix:
     - source: salt://base-hardening-formula/cron.daily/00logwatch
     - require:
       - pkg: software-requirements
+
+# Disable Coredumps
+/etc/security/limits.d/10.hardcore.conf:
+  file.managed:
+    - user: root
+    - group: root
+    - mode: 0400
+    - source: salt://hardcore.jinja
