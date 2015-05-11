@@ -4,8 +4,6 @@ include:
   - .sysctl
   ## Limits
   - .limits
-  ## Lockdown system files
-  - .minimize_access
 
   # Configure IPTables
   - .firewall-base
