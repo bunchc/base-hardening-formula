@@ -3,7 +3,7 @@
 This is a SaltStack formula to provide basic 'first step' server hardening.
 
 Specifically it:
-- Removes write access from system folders and commands
+
 - Disables coredumps via limits
 - Sets a number of ```net.ipv4.*``` values to sane defaults
 - Hardens SSH
