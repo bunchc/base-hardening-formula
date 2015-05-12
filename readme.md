@@ -38,15 +38,6 @@ user-ports:
     proto: tcp
     dport: 4506
 
-# system paths to remobe write access from
-user-paths:
-  - /usr/local/sbin
-  - /usr/local/bin
-  - /usr/sbin
-  - /usr/bin
-  - /sbin
-  - /bin
-
 # SSH Settings
 company: "Amazing Smoothies"
 ssh_port: 2222
